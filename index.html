@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Link Shortener</h1>
+      <div class="get-url">
+      <form action="">
+      <label for="url">
+          Enter a link:
+      </label>
+
+      <input
+        type="url"
+        name="url"
+        id="url"
+        placeholder="example.com"
+        pattern="https://.*"
+        size="30"
+        required
+      />
+        <button type="submit" class="submit">Get link</button>    
+      <div class="kind-shorten">
+        <p>Short domain:</p>
+          <input type="radio" name="1" id="shrtcode" class="input-check"/>shrtco.de
+          <input type="radio" name="1" id="prde" class="input-check" /> 9qr.de
+          <input type="radio" name="1" id="shiny" class="input-check" />shiny.link
+        </div>
+    </form>
+    
+    <div class="showShortenLink">
+        <h2>Link generated</h2>
+        <p class="short-url"></p>
+        </p>
+    </div>
+</div>
+
+</div>
+</body>
+    <script src="app.js"></script>
+  </body>
+</html>
